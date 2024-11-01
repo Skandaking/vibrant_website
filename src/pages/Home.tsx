@@ -29,7 +29,7 @@ const bannerData = [
 
 const Home = () => {
   return (
-    <div className="min-h-screen mt-[100px]">
+    <div className="min-h-screen mt-[0px]">
       {/* Hero Banner Section */}
       <section className="relative h-[calc(100vh-144px)] w-full overflow-hidden">
         <Swiper
