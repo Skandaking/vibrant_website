@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-white dark:bg-gray-900;
+}
+
+/* Add these styles after your existing styles */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-white opacity-50 transition-opacity hover:opacity-100;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-white opacity-50;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary-main opacity-100;
+}
+

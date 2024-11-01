@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 733.84 324.69">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .17em;
+      }
+
+      .cls-2 {
+        fill: #f16823;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        letter-spacing: .2em;
+      }
+
+      .cls-3, .cls-6 {
+        fill: #262961;
+      }
+
+      .cls-7 {
+        letter-spacing: .18em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        fill: #f16623;
+        font-size: 22.18px;
+      }
+
+      .cls-9, .cls-6 {
+        font-family: Nexa-Heavy, Nexa;
+        font-weight: 800;
+      }
+
+      .cls-10 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        fill: #f16924;
+      }
+
+      .cls-6 {
+        font-size: 133.08px;
+      }
+
+      .cls-12 {
+        letter-spacing: .2em;
+      }
+
+      .cls-13 {
+        letter-spacing: .2em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: .11em;
+      }
+    </style>
+  </defs>
+  <text class="cls-9" transform="translate(189.77 254.53)"><tspan class="cls-13" x="0" y="0">RESEA</tspan><tspan class="cls-12" x="99.85" y="0">R</tspan><tspan class="cls-5" x="120.26" y="0">CH</tspan><tspan class="cls-1" x="161.98" y="0"> </tspan><tspan class="cls-5" x="170.89" y="0">AND </tspan><tspan class="cls-7" x="245.35" y="0">C</tspan><tspan class="cls-5" x="264.98" y="0">ONSU</tspan><tspan class="cls-15" x="349.88" y="0">L</tspan><tspan class="cls-13" x="365.87" y="0">TING</tspan></text>
+  <text class="cls-6" transform="translate(178.02 220.14)"><tspan class="cls-11" x="0" y="0">V</tspan><tspan x="97.81" y="0">ib</tspan><tspan class="cls-10" x="219.04" y="0">r</tspan><tspan x="278.67" y="0">a</tspan><tspan class="cls-14" x="363.3" y="0">n</tspan><tspan class="cls-8" x="445.15" y="0">t</tspan></text>
+  <g>
+    <polygon class="cls-2" points="136.08 188.79 128.1 208.62 119.98 232.44 111.86 208.62 104.01 188.79 81.25 188.79 109.2 254.53 130.49 254.53 158.31 188.79 136.08 188.79"/>
+    <rect class="cls-3" x="81.25" y="106.7" width="22.82" height="75.84"/>
+    <rect class="cls-3" x="135.49" y="137.85" width="22.82" height="44.69"/>
+    <polygon class="cls-4" points="110.08 182.53 129.48 182.53 129.48 73.97 137.31 73.97 119.78 49.78 102.25 73.97 110.08 73.97 110.08 182.53"/>
+  </g>
+</svg>
