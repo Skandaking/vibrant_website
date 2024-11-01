@@ -1,14 +1,14 @@
 export const lightTheme = {
   primary: {
-    main: '#4F46E5',    // Indigo
-    light: '#818CF8',
-    dark: '#3730A3',
+    main: '#252962',    // New Primary Color
+    light: '#818CF8',   // Adjust if needed
+    dark: '#3730A3',    // Adjust if needed
     contrastText: '#FFFFFF',
   },
   secondary: {
-    main: '#10B981',    // Emerald
-    light: '#34D399',
-    dark: '#059669',
+    main: '#F36724',    // New Secondary Color
+    light: '#34D399',   // Adjust if needed
+    dark: '#059669',    // Adjust if needed
     contrastText: '#FFFFFF',
   },
   background: {
@@ -30,15 +30,15 @@ export const lightTheme = {
 
 export const darkTheme = {
   primary: {
-    main: '#818CF8',    // Lighter Indigo for dark mode
-    light: '#A5B4FC',
-    dark: '#4F46E5',
+    main: '#252962',    // New Primary Color
+    light: '#A5B4FC',   // Adjust if needed
+    dark: '#4F46E5',    // Adjust if needed
     contrastText: '#FFFFFF',
   },
   secondary: {
-    main: '#34D399',    // Lighter Emerald for dark mode
-    light: '#6EE7B7',
-    dark: '#10B981',
+    main: '#F36724',    // New Secondary Color
+    light: '#6EE7B7',   // Adjust if needed
+    dark: '#10B981',    // Adjust if needed
     contrastText: '#FFFFFF',
   },
   background: {

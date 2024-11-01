@@ -17,9 +17,9 @@ const Navbar = () => {
   const { isDarkMode } = useTheme();
 
   return (
-    <header className="w-full">
-      {/* Top Bar */}
-      <div className="bg-primary-main dark:bg-dark-primary-main text-white">
+    <header className="w-full absolute z-50">
+      {/* Top Bar - Full Width */}
+      <div className="bg-primary-main dark:bg-dark-primary-main text-white w-full">
         <div className="container mx-auto px-4 py-2">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-4">
@@ -41,9 +41,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Main Navbar */}
-      <nav className="bg-white dark:bg-gray-800 shadow-lg">
-        <div className="container mx-auto px-4 max-w-5xl">
+      {/* Main Navbar - With Side Spacing */}
+      <nav className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm">
+        <div className="container mx-auto px-8 lg:px-16 max-w-6xl">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
