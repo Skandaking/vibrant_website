@@ -9,21 +9,21 @@ import 'swiper/css/effect-fade';
 const bannerData = [
   {
     image: '/src/assets/banner/slider-01.jpg',
-    title: 'Welcome to Vibrant',
-    subtitle: 'Creating Digital Excellence',
-    description: 'We transform ideas into powerful digital solutions',
+    title: (<> Transforming Healthcare <span className="text-secondary-main">&</span>  Agriculture</>),
+    subtitle: 'Research & Consulting Excellence',
+    description: 'Innovative solutions for sustainable development in health, social, and agriculture sectors',
   },
   {
     image: '/src/assets/banner/slider-02.jpg',
-    title: 'Innovative Solutions',
-    subtitle: 'For Modern Businesses',
-    description: 'Empowering your business with cutting-edge technology',
+    title: (<>Building <span className="text-secondary-main">High-Performance</span> Organizations</>),
+    subtitle: 'Expert Consulting Services',
+    description: 'Empowering systems through integrated healthcare and agriculture interventions',
   },
   {
     image: '/src/assets/banner/slider-03.jpg',
-    title: 'Expert Team',
-    subtitle: 'Professional Service',
-    description: 'Dedicated experts committed to your success',
+    title: (<>Driving <span className="text-secondary-main">Sustainable</span> Solutions</>),
+    subtitle: 'Industry Thought Leaders',
+    description: 'Leveraging interdisciplinary expertise for peak organizational performance',
   },
 ];
 
@@ -68,7 +68,7 @@ const Home = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.2 }}
-                      className="mb-2 text-sm font-medium uppercase tracking-wider text-primary-light"
+                      className="mb-3 text-base font-medium uppercase tracking-wider text-secondary-main"
                     >
                       {slide.subtitle}
                     </motion.h2>
@@ -76,7 +76,7 @@ const Home = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.4 }}
-                      className="mb-6 text-5xl font-bold leading-tight"
+                      className="mb-6 text-6xl font-bold leading-tight"
                     >
                       {slide.title}
                     </motion.h1>
@@ -84,7 +84,7 @@ const Home = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.6 }}
-                      className="mb-8 text-lg text-gray-200"
+                      className="mb-8 text-xl text-gray-200 max-w-3xl mx-auto"
                     >
                       {slide.description}
                     </motion.p>
