@@ -8,19 +8,19 @@ import 'swiper/css/effect-fade';
 
 const bannerData = [
   {
-    image: '/src/assets/banner/banner1.jpg',
+    image: '/src/assets/banner/slider-01.jpg',
     title: 'Welcome to Vibrant',
     subtitle: 'Creating Digital Excellence',
     description: 'We transform ideas into powerful digital solutions',
   },
   {
-    image: '/src/assets/banner/banner2.jpg',
+    image: '/src/assets/banner/slider-02.jpg',
     title: 'Innovative Solutions',
     subtitle: 'For Modern Businesses',
     description: 'Empowering your business with cutting-edge technology',
   },
   {
-    image: '/src/assets/banner/banner3.jpg',
+    image: '/src/assets/banner/slider-03.jpg',
     title: 'Expert Team',
     subtitle: 'Professional Service',
     description: 'Dedicated experts committed to your success',

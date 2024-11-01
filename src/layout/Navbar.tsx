@@ -43,7 +43,7 @@ const Navbar = () => {
 
       {/* Main Navbar */}
       <nav className="bg-white dark:bg-gray-800 shadow-lg">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 max-w-5xl">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
@@ -52,9 +52,6 @@ const Navbar = () => {
                 alt="Vibrant Company Logo" 
                 className="h-12 w-auto"
               />
-              <span className="text-2xl font-bold text-primary-main dark:text-dark-primary-main">
-                Vibrant
-              </span>
             </Link>
 
             {/* Desktop Navigation */}
