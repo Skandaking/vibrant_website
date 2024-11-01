@@ -29,9 +29,9 @@ const bannerData = [
 
 const Home = () => {
   return (
-    <div className="min-h-screen -mt-[80px]">
+    <div className="min-h-screen mt-[100px]">
       {/* Hero Banner Section */}
-      <section className="relative h-screen w-full overflow-hidden">
+      <section className="relative h-[calc(100vh-144px)] w-full overflow-hidden">
         <Swiper
           modules={[Autoplay, Navigation, Pagination, EffectFade]}
           effect="fade"

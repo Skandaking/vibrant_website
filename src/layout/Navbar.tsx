@@ -19,9 +19,9 @@ const Navbar = () => {
   return (
     <header className="w-full absolute z-50">
       {/* Top Bar - Full Width */}
-      <div className="bg-primary-main dark:bg-dark-primary-main text-white w-full">
-        <div className="container mx-auto px-4 py-2">
-          <div className="flex justify-between items-center text-sm">
+      <div className="bg-primary-main dark:bg-dark-primary-main text-white w-full h-16">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center text-sm h-full">
             <div className="flex items-center space-x-4">
               <a href="tel:+1234567890" className="flex items-center hover:text-gray-200">
                 <PhoneIcon className="h-4 w-4 mr-1" />
@@ -41,16 +41,16 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Main Navbar - With Side Spacing */}
-      <nav className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm">
-        <div className="container mx-auto px-8 lg:px-16 max-w-6xl">
+      {/* Main Navbar - Centered with 70% width */}
+      <nav className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm -mt-8">
+        <div className="w-[70%] mx-auto">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <img 
                 src={Logo} 
                 alt="Vibrant Company Logo" 
-                className="h-12 w-auto"
+                className="h-10 w-auto"
               />
             </Link>
 
