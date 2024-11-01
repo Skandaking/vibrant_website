@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useTheme } from '../theme/ThemeContext';
 import ThemeToggle from '../components/ThemeToggle';
 import {
@@ -8,6 +8,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
+import { FaFacebook, FaLinkedin, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 
 import Logo from '../assets/images/logo1.svg';
 
@@ -32,8 +33,18 @@ const Navbar = () => {
               </a>
             </div>
             <div className="flex items-center space-x-4 mt-2">
-              <a href="#" className="hover:text-gray-200">News</a>
-              <a href="#" className="hover:text-gray-200">Careers</a>
+              <a href="#" className="hover:text-gray-200">
+                <FaFacebook size={18} />
+              </a>
+              <a href="#" className="hover:text-gray-200">
+                <FaLinkedin size={18} />
+              </a>
+              <a href="#" className="hover:text-gray-200">
+                <FaWhatsapp size={18} />
+              </a>
+              <a href="#" className="hover:text-gray-200">
+                <FaYoutube size={18} />
+              </a>
               <ThemeToggle />
             </div>
           </div>
@@ -41,7 +52,7 @@ const Navbar = () => {
       </div>
 
       {/* Main Navbar - Modified positioning */}
-      <div className="absolute left-0 right-0 -bottom-10 top-10 z-50">
+      <div className="absolute left-0 right-0 -bottom-10 top-12 z-50">
         <nav className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-md rounded-sm max-w-[80%] mx-auto">
           <div className="px-6">
             <div className="flex justify-between items-center h-20">
@@ -50,30 +61,48 @@ const Navbar = () => {
                 <img 
                   src={Logo} 
                   alt="Vibrant Company Logo" 
-                  className="h-10 w-auto"
+                  className="h-20 w-auto"
                 />
               </Link>
 
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-8">
-                <Link 
+                <NavLink 
                   to="/" 
-                  className="text-gray-700 dark:text-gray-200 hover:text-primary-main dark:hover:text-dark-primary-main font-medium"
+                  className={({ isActive }) => `
+                    text-gray-700 dark:text-gray-200 hover:text-secondary-main dark:hover:text-secondary-main font-medium relative group
+                    ${isActive ? 'text-secondary-main dark:text-secondary-main' : ''}
+                  `}
                 >
-                  Home
-                </Link>
-                <Link 
+                  <span className="relative">
+                    Home
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary-main group-hover:w-full transition-all duration-300"></span>
+                  </span>
+                </NavLink>
+                <NavLink 
                   to="/about" 
-                  className="text-gray-700 dark:text-gray-200 hover:text-primary-main dark:hover:text-dark-primary-main font-medium"
+                  className={({ isActive }) => `
+                    text-gray-700 dark:text-gray-200 hover:text-secondary-main dark:hover:text-secondary-main font-medium relative group
+                    ${isActive ? 'text-secondary-main dark:text-secondary-main' : ''}
+                  `}
                 >
-                  About
-                </Link>
-                <Link 
+                  <span className="relative">
+                    About
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary-main group-hover:w-full transition-all duration-300"></span>
+                  </span>
+                </NavLink>
+                <NavLink 
                   to="/services" 
-                  className="text-gray-700 dark:text-gray-200 hover:text-primary-main dark:hover:text-dark-primary-main font-medium"
+                  className={({ isActive }) => `
+                    text-gray-700 dark:text-gray-200 hover:text-secondary-main dark:hover:text-secondary-main font-medium relative group
+                    ${isActive ? 'text-secondary-main dark:text-secondary-main' : ''}
+                  `}
                 >
-                  Services
-                </Link>
+                  <span className="relative">
+                    Services
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary-main group-hover:w-full transition-all duration-300"></span>
+                  </span>
+                </NavLink>
                 <button className="bg-primary-main dark:bg-dark-primary-main text-white px-6 py-2 rounded-md hover:bg-primary-dark dark:hover:bg-dark-primary-dark transition-colors">
                   Contact Us
                 </button>
@@ -96,27 +125,36 @@ const Navbar = () => {
             {isOpen && (
               <div className="md:hidden py-4">
                 <div className="flex flex-col space-y-4">
-                  <Link 
+                  <NavLink 
                     to="/" 
-                    className="text-gray-700 dark:text-gray-200 hover:text-primary-main dark:hover:text-dark-primary-main font-medium"
+                    className={({ isActive }) => `
+                      text-gray-700 dark:text-gray-200 hover:text-secondary-main dark:hover:text-secondary-main font-medium
+                      ${isActive ? 'text-secondary-main dark:text-secondary-main' : ''}
+                    `}
                     onClick={() => setIsOpen(false)}
                   >
                     Home
-                  </Link>
-                  <Link 
+                  </NavLink>
+                  <NavLink 
                     to="/about" 
-                    className="text-gray-700 dark:text-gray-200 hover:text-primary-main dark:hover:text-dark-primary-main font-medium"
+                    className={({ isActive }) => `
+                      text-gray-700 dark:text-gray-200 hover:text-secondary-main dark:hover:text-secondary-main font-medium
+                      ${isActive ? 'text-secondary-main dark:text-secondary-main' : ''}
+                    `}
                     onClick={() => setIsOpen(false)}
                   >
                     About
-                  </Link>
-                  <Link 
+                  </NavLink>
+                  <NavLink 
                     to="/services" 
-                    className="text-gray-700 dark:text-gray-200 hover:text-primary-main dark:hover:text-dark-primary-main font-medium"
+                    className={({ isActive }) => `
+                      text-gray-700 dark:text-gray-200 hover:text-secondary-main dark:hover:text-secondary-main font-medium
+                      ${isActive ? 'text-secondary-main dark:text-secondary-main' : ''}
+                    `}
                     onClick={() => setIsOpen(false)}
                   >
                     Services
-                  </Link>
+                  </NavLink>
                   <button className="bg-primary-main dark:bg-dark-primary-main text-white px-6 py-2 rounded-md hover:bg-primary-dark dark:hover:bg-dark-primary-dark transition-colors w-full">
                     Contact Us
                   </button>
